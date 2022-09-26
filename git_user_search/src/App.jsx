@@ -12,6 +12,7 @@ function App() {
    
 <Header></Header>
 <UserSearch></UserSearch>
+<Result/>
   </div>
   );
 }
@@ -30,9 +31,9 @@ const Header = ()=>{
 const UserSearch = ()=>{
 
   return(
-    <div className="searchbox">
+    <div className="search">
 
-        <InputGroup className="mt-3 mb-3">
+        <InputGroup className="searchbox">
           <Form.Control
             placeholder="Search Github user name"
             aria-label="Username"
@@ -44,6 +45,21 @@ const UserSearch = ()=>{
       
     </div>
 );
+}
+
+const Result = ()=>{
+
+  return(
+
+      <div className="results">
+
+        
+
+
+      </div>
+
+
+  );
 }
 
 export default App;
